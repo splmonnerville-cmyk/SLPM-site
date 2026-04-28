@@ -30,36 +30,29 @@ body {
 }
 /* HEADER */
 header {
-    background-color: #b30000;
-    color: white;
-    padding: 20px;
-
-    /* ✅ Header fixé */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(90deg, #0f172a, #0b3a62);
+  color: white;
+  position: relative;
+  z-index: 1000;
 }
 
-  h1, h2, h3 {
-    font-size: 1.5rem !important;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-  .grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  button, input, select, textarea {
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
-
+@media (max-width: 600px) {
   nav {
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: column;
+    width: 100%;
   }
+}
 
 nav .btn-admin {
     margin-left: auto;
