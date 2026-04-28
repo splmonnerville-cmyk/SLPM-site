@@ -9,7 +9,25 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
- 
+ /* Adaptation responsive pour mobiles */
+@media (max-width: 600px) {
+  .container {
+    width: 100% !important;
+    padding: 0 12px !important;
+  }
+  h1, h2, h3 {
+    font-size: 1.5rem !important;
+}
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  button, input, select, textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
 /* HEADER */
 header {
     background-color: #b30000;
@@ -24,15 +42,24 @@ header {
     z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
+  h1, h2, h3 {
+    font-size: 1.5rem !important;
 }
 
-nav {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  button, input, select, textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+
+  nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
 
 nav .btn-admin {
     margin-left: auto;
