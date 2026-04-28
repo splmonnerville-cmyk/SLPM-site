@@ -9,39 +9,14 @@ body {
 }
 
 /* HEADER */
-    header {
-      background-color: #b91c1c; / rouge vif /
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      box-sizing: border-box;
-    }
-    .brand {
-      font-weight: bold;
-      font-size: 1.5rem;
-      user-select: none;
-    }
-    nav {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    nav a:hover,
-    nav a:focus {
-      background-color: rgba(255 255 255 / 0.2);
-      outline: none;
-    }
+header {
+    background-color: #b30000;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 header h1 {
     margin: 0;
@@ -59,7 +34,16 @@ nav .btn-admin {
     margin-left: auto;
 }
 
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 /* MAIN */
 main {
