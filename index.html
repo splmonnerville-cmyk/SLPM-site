@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bandeau rouge responsive</title>
-  <style>
-    /* Style du bandeau /
-
-
-    / Responsive pour petits écrans */
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-      }
-      nav {
-        flex-direction: column;
-        width: 100%;
-      }
-      nav a {
-        padding: 0.75rem 0;
-        width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Syndicat Populaire Lycéen de Monnerville</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="brand">Syndicat Populaire Lycéen</div>
-    <nav aria-label="Navigation principale">
-      <a href="#">Accueil</a>
-      <a href="#">Le syndicat</a>
-      <a href="#">Nos objectifs</a>
-      <a href="#">Nos actions</a>
-      <a href="#">Actualités</a>
-      <a href="#">Contact</a>
+
+<header>
+    <h1>Syndicat Populaire Lycéen de Monnerville</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="syndicat/syndicat.html">Le syndicat</a>
+        <a href="objectifs/objectifs.html">Nos objectifs</a>
+        <a href="actions/actions.html">Nos actions</a>
+        <a href="actualites/actualites.html">Actualités</a>
+        <a href="contact/contact.html">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <main style="padding: 2rem;">
-    <h1>Contenu principal</h1>
-    <p>Le bandeau rouge ci-dessus s’adapte correctement sur mobile et PC.</p>
-  </main>
-</body>
-</html>
+<main>
+    <section>
+        <h2>Pour défendre les droits des lycéens</h2>
+        <p>
+            Nous sommes un syndicat lycéen engagé pour représenter les élèves,
+            défendre leurs droits et améliorer leurs conditions d'étude.
+        </p>
+        <p>
+            Pour plus d'information sur les syndicats lycéens vous pouvez aller sur le site de
+            <a href="https://solidaires-etudiant-e-s.org/site/monter-un-syndicat/">solidaires étudiants</a>.
+        </p>
+    </section>
 
+    <section>
+        <h2>Nous trouver</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.53090590839!2d1.4535022747751267!3d44.46328929966389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac8bf7af28b1bb%3A0xaa1428f1af60221f!2sLyc%C3%A9e%20Polyvalent%20Gaston%20Monnerville!5e0!3m2!1sfr!2sfr!4v1771314267845!5m2!1sfr!2sfr"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+</main>
 
 <footer>
     <p>© 2026 – Syndicat Populaire Lycéen de Monnerville</p>
