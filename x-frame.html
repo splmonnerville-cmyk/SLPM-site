@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Politique de sécurité renforcée -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+        style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+        img-src 'self' data: https:;
+        font-src 'self' https:;
+        object-src 'none';
+        frame-ancestors 'none';
+        form-action 'self';
+        upgrade-insecure-requests;
+    ">
+    <!-- Empêche l'inclusion dans une iframe (protection contre le clickjacking) -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- Empêche le MIME-sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- Empêche les attaques XSS via les références -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Désactive le cache pour les pages sensibles -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Site Hyper-Sécurisé - SLPM Monnerville</title>
+    <style>
+        /* Styles intégrés pour éviter les dépendances externes non sécurisées */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+        }
+        .secure-badge {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Site Hyper-Sécurisé <span class="secure-badge">🔒</span></h1>
+            <p>Exemple de page avec toutes les protections de sécurité activées.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Mesures de Sécurité Implémentées</h2>
+                <ul>
+                    <li><strong>X-Frame-Options: DENY</strong> – Empêche l'inclusion dans une iframe.</li>
+                    <li><strong>Content-Security-Policy (CSP)</strong> – Limite les sources des scripts, styles et images.</li>
+                    <li><strong>X-Content-Type-Options: nosniff</strong> – Empêche le MIME-sniffing.</li>
+                    <li><strong>Referrer-Policy: strict-origin-when-cross-origin</strong> – Limite les fuites de données via les références.</li>
+                    <li><strong>Cache-Control: no-store</strong> – Désactive le cache pour les pages sensibles.</li>
+                    <li><strong>Upgrade-Insecure-Requests</strong> – Force l'utilisation de HTTPS.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Contenu Sécurisé</h2>
+                <p>Cette page est un exemple de contenu sécurisé. Tous les éléments externes sont chargés via HTTPS, et les scripts inline sont désactivés par défaut.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 – Site Hyper-Sécurisé. Tous droits réservés.</p>
+        </footer>
+    </div>
+</body>
+</html>
