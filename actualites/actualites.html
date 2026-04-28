@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Syndicat Populaire Lycéen de Monnerville</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Syndicat Populaire Lycéen de Monnerville</h1>
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../syndicat/syndicat.html">Le syndicat</a>
+        <a href="../objectifs/objectifs.html">Nos objectifs</a>
+        <a href="../actions/actions.html">Nos actions</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="../actions/actions.html">Nos actions</a>
+        <button id="btnAdmin" style="margin-left:15px; padding:5px 12px; cursor:pointer; border:none; border-radius:5px; background-color:#8f0000; color:white; font-weight:bold;">🔒 Admin</button>
+        <a href="../contact/contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+
+    <section id="formAdmin" style="display:none;">
+        <h2>Ajouter un article</h2>
+
+        <input type="text" id="titre" placeholder="Titre de l'article">
+        <br><br>
+
+        <textarea id="contenu" placeholder="Contenu de l'article"></textarea>
+        <br><br>
+
+        <label for="image"><strong>Image (optionnelle) :</strong></label>
+        <br>
+        <input type="file" id="image" accept="image/*" style="margin-top:8px;">
+        <br>
+        <img id="apercu" src="" alt="Aperçu" style="display:none; max-width:100%; max-height:200px; margin-top:10px; border-radius:8px;">
+        <br><br>
+
+        <p id="erreur" class="error" style="display:none;">Veuillez remplir le titre et le contenu.</p>
+        <p id="erreurImage" class="error" style="display:none;">Image trop lourde (max 1 Mo). Choisissez une image plus petite.</p>
+        <button id="btnPublier">Publier</button>
+    </section>
+
+    <section>
+        <h2>Articles publiés</h2>
+        <div id="articles"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 – Syndicat Populaire Lycéen de Monnerville</p>
+</footer>
+
+<script src="actualites.js" type="module"></script>
+
+</body>
+</html>
