@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+ 
 /* HEADER */
 header {
     background-color: #b30000;
