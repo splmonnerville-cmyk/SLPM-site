@@ -13,13 +13,16 @@
         <a href="../index.html">Accueil</a>
         <a href="../syndicat/syndicat.html">Le syndicat</a>
         <a href="../objectifs/objectifs.html">Nos objectifs</a>
+        <a href="../actions/actions.html">Nos actions</a>
         <a href="actualites.html">Actualités</a>
         <a href="../contact/contact.html">Contact</a>
+        <button id="btnAdmin" class="btn-admin" style="padding:5px 12px; cursor:pointer; border:none; border-radius:5px; background-color:#8f0000; color:white; font-weight:bold;">🔒 Admin</button>
     </nav>
 </header>
+
 <main>
 
-    <section>
+    <section id="formAdmin" style="display:none;">
         <h2>Ajouter un article</h2>
 
         <input type="text" id="titre" placeholder="Titre de l'article">
@@ -51,7 +54,7 @@
     <p>© 2026 – Syndicat Populaire Lycéen de Monnerville</p>
 </footer>
 
-<script src="actualites.js"></script>
+<script src="actualites.js" type="module"></script>
 
 </body>
 </html>
